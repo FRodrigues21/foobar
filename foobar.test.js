@@ -3,16 +3,20 @@ const foobar = require("./foobar.js")
 test("it returns Foo when index is only multiple of 3", () => {
     const result = foobar();
 
-    for(let i = 3; i <= 100; i = i*3) {
-        expect(result[i - 1]).toBe("Foo")
+    for(let i = 3; i <= 100; i = i+3) {
+        if(i % 5 != 0) {
+            expect(result[i - 1]).toBe("Foo")
+        }
     }
 });
 
 test("it returns Bar when index is only multiple of 5", () => {
     const result = foobar();
 
-    for(let i = 5; i <= 100; i = i*5) {
-        expect(result[i - 1]).toBe("Bar")
+    for(let i = 5; i <= 100; i = i+5) {
+        if(i % 3 != 0) {
+            expect(result[i - 1]).toBe("Bar")
+        }
     }
 });
 

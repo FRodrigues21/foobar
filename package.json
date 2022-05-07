@@ -1,0 +1,14 @@
+{
+  "name": "foobar",
+  "version": "1.0.0",
+  "description": "foobar challenge",
+  "main": "foobar.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
